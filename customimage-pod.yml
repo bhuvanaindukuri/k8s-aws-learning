@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: bhuvana-custom-pod
+spec:
+  containers: 
+  - name: petclinic
+    image: bhuvanap/spring-petclinic-repo
+    ports:
+    -  containerPort: 8080
